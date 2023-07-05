@@ -13,9 +13,27 @@
 
     //ENTRADA
     
+    const turno = prompt("Que turno você estuda? (M - Matutino; V - Vespertino; N - Notunro)").toUpperCase()
     
     //PROCESSAMENTO
 
+    switch (turno) {
+        case "M":
+        alert("Bom dia!");
+        break;
+
+        case "V":
+            alert("Boa tarde!")
+            break;
+
+        case "N":
+            alert("Boa noite!")
+            break;
+
+        default:
+            alert("ERROR")
+            break;
+    }
     
     //SAÍDA
 
