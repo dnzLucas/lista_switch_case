@@ -1,0 +1,8 @@
+switch (ps1) {
+        case "S":
+            pontos ++
+            break;
+    
+        default:
+            break;
+    }

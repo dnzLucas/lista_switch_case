@@ -12,8 +12,60 @@
 
     //ENTRADA
 
+    const p1 = prompt("Telefonou para a vítima?".toLowerCase())
+    const p2 = prompt("Esteve no local do crime?".toLowerCase())
+    const p3 = prompt("Mora perto da vítima?".toLowerCase())
+    const p4 = prompt("Devia para a vítima?".toLowerCase())
+    const p5 = prompt("Já trabalhou com a vítima?".toLowerCase())
+    
     
     //PROCESSAMENTO
+
+    let pontos = 0;
+
+    if (p1 == "sim") {
+        pontos = pontos + 1;
+    }
+    if (p2 == "sim") {
+        pontos = pontos + 1;
+    }
+
+    if (p3 == "sim") {
+        pontos = pontos + 1;
+    }
+
+    if (p4 == "sim") {
+        pontos = pontos + 1;
+    }
+
+    if (p5 == "sim") {
+        pontos = pontos + 1;
+    }
+
+    
+    switch (pontos) {
+        case 5:
+            alert("VOCÊ É O ASSASSINO")
+            break;
+    
+        case 4:
+        case 3:
+            alert("Você é cumplice! ")
+           break;
+
+        case 2:
+            alert("Você é suspeito! ")
+            break;
+
+        case 1:
+        case 0:
+            alert ("Você é inocente! ")
+            break;
+
+        default:
+            alert("???????????")
+            break;
+    }
 
 
     //SAÍDA

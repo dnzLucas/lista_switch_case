@@ -7,8 +7,89 @@
 
     //ENTRADA
 
-    
+    const hemisferio = prompt("Em qual hemisfério você está? (N ou S)").toLowerCase();
+
+    const mes = prompt("Qual é o mês atual? (Digite o nome completo)").toLowerCase();
+
     //PROCESSAMENTO
+
+
+
+
+    switch (hemisferio) {
+        case "n":
+            switch (mes) {
+
+                case "dezembro":
+                case "janeiro":
+                case "fevereiro":
+                    alert("Você está no inverno")
+                    break;
+
+                case "março":
+                case "abril":
+                case "maio":
+                    alert("Você está na privavera")
+                    break;
+
+                case "junho":
+                case "julho":
+                case "agosto":
+                    alert("Você está no verão")
+                    break;
+
+                case "setembro":
+                case "outubro":
+                case "novembro":
+                    alert("Você está no outono")
+                    break;
+
+                default:
+                    alert("??????????")
+            }
+
+        case "s":
+            switch (mes) {
+
+                case "dezembro":
+                case "janeiro":
+                case "fevereiro":
+                    alert("Você está no verão")
+                    break;
+
+                case "março":
+                case "abril":
+                case "maio":
+                    alert("Você está na outono")
+                    break;
+
+                case "junho":
+                case "julho":
+                case "agosto":
+                    alert("Você está no inverno")
+                    break;
+
+                case "setembro":
+                case "outubro":
+                case "novembro":
+                    alert("Você está na primavera")
+                    break;
+
+                default:
+                    alert("??????????")
+                    break;
+            }
+
+            default:
+                alert("?????????????????")
+                break;
+    }
+
+
+        
+
+
+
 
 
     //SAÍDA
