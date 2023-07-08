@@ -15,9 +15,62 @@
 
     //PROCESSAMENTO
 
-    switch (op){
-        case "+":
-            
+            let con;
+            let nparimpar;
+            let nposneg;
+            let IntDec;
+            let resposta;
+
+            switch (op) {
+                case "*":
+                    con = n1 * n2;
+                    nparimpar = con % 2;
+                    nposneg = (con / 1 > 0) ? true : false;
+                    IntDec = Number.isInteger(con);
+                    resposta = `O resultado da sua multiplicação é ${con}`;
+                    break;
+                case "/":
+                    con = n1 / n2;
+                    nparimpar = con % 2;
+                    nposneg = (con / 1 > 0) ? true : false;
+                    IntDec = Number.isInteger(con);
+                    resposta = `O resultado da sua divisão é ${con}`;
+                    typeof IntDec
+                    break;
+                case "+":
+                    con = n1 + n2;
+                    nparimpar = con % 2;
+                    nposneg = (con / 1 > 0) ? true : false;
+                    IntDec = Number.isInteger(con);
+                    resposta = `O resultado da sua adição é ${con}`;
+                    break;
+                case "-":
+                    con = n1 - n2;
+                    nparimpar = con % 2;
+                    nposneg = (con / 1 > 0) ? true : false;
+                    IntDec = Number.isInteger(con);
+                    resposta = `O resultado da sua subtração é ${con}`;
+                    break;
+                default:
+                    alert(`Valor Inválido!`);
+            }
+        switch (nparimpar) {
+            case 0:
+                resposta += `, é par`;
+                break;
+            default:
+                resposta += `, é ímpar`;
+                break;
+        }
+        switch (nposneg) {
+                 case true:
+                resposta += ` inteiro.`;
+                break;
+            default:
+                resposta += ` decimal.`;
+                break;
+        }
+        alert(resposta)    
     }
     
     
